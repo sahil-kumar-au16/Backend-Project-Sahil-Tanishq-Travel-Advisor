@@ -1,22 +1,24 @@
-var requestpending = "";
+
 function Product(id,name,price)
 {
 	this.id=id;
 	this.name=name;
 	this.price=price;
 }
-var p1 = new Product(1,"Indian Lunch",650)
-var p2 = new Product(2,"Italian Lunch",600)
-var p3 = new Product(3,"Chinese Lunch",700)
-var p4 = new Product(4,"American Lunch",1000)
-var p5 = new Product(5,"Play Station 4",60000)
-var p6 = new Product(6,"Microsoft Surface",55000)
-var p7 = new Product(7,"MacBook Pro",130000)
-var p8 = new Product(8,"Sony Headphones",7000)
-var p9 = new Product(9,"Play Station 4",60000)
-var p10 = new Product(10,"Microsoft Surface",55000)
+var p1 = new Product(1,"Apple Squash",190)
+var p2 = new Product(2,"Watermelon Juice",130)
+var p3 = new Product(3,"Wild Beer",220)
+var p4 = new Product(4,"Indian Buffet",650)
+var p5 = new Product(5,"Italian Lunch",600)
+var p6 = new Product(6,"Chinese Lunch",700)
+var p7 = new Product(7,"American Buffet",1000)
+var p8 = new Product(8,"Indian Dinner",450)
+var p9 = new Product(9,"Italian Dinner",600)
+var p10 = new Product(10,"American Dinner",800)
+var p11 = new Product(10,"South Indian Dinner",1000)
+var p12 = new Product(10,"Chinese Dinner",800)
 
-var products = [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10];
+var products = [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12];
 var purchase = [];
 
 function retrievePurchase()
@@ -63,11 +65,7 @@ function refreshTable()
 		tester(done);
 		
 	}
-	function tester(ready)
-	{
-		var x =document.getElementById("testing");
-		x.innerHTML=ready[0];
-	}
+	
 
 
 	$("button").click(function(e){
@@ -154,7 +152,7 @@ $(function()
 	{
 		var	idClicked = e.target.id;
 
-		for(i=1;i<=10;i++)
+		for(i=1;i<=12;i++)
 		{
 			if(idClicked===("btn"+i))
 			{
