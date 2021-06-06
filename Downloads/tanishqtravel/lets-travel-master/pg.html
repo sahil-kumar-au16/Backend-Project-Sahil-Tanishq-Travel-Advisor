@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Payment Gateway</title>
+    <style>
+      body {
+        background-color: #e9e8e8;
+        font-family: Nunito, sans-serif;
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        background: #212529;
+        color: white;
+        padding: 15px;
+        width: 100%;
+      }
+      .footer a {
+        text-decoration: none ;
+        color: white;
+      }
+    </style>
+    </head>
+  <body>
+    <header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  			<div class="container">
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+  			     <span class="navbar-toggler-icon"></span>
+  				</button>
+ 				 <a class="navbar-brand" href="/">Let's Travel!</a>
+
+			  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+   			 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    		  <li class="nav-item active">
+      		  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+     		 </li>
+     		 <li class="nav-item">
+     	 	  <a class="nav-link" href="#">About Us</a>
+     		 </li>
+     		 <li class="nav-item">
+      		  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacts</a>
+			  </li>
+			  <li class="nav-item">
+      		  <a class="nav-link" href="/subscription" tabindex="-1" aria-disabled="true">Subscriptions</a>
+     		 </li>
+			  <li class="nav-item">
+      		  <a class="nav-link" href="/admin" tabindex="-1" aria-disabled="true">Admin Page</a>
+     		 </li>
+   			</ul>
+    		<form class="form-inline my-2 my-lg-0 call-me-form">
+     	 	<input class="form-control mr-sm-2" type="search" placeholder="Phone number" aria-label="Search">
+    	  	<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Call me</button>
+    		</form>
+  			</div>
+  			</div><!--container-->
+		</nav>
+    </header>
+<main>
+  <div style="width: 400px; margin: auto;" class="card my-5">
+    <div class="card-body">
+      <form class="" action="/paynow" method="post">
+        <div class="form-group">
+          <label for="">Name: </label>
+          <input class="form-control" type="text" name="name" value="">
+        </div>
+        <div class="form-group">
+          <label for="">Email: </label>
+          <input class="form-control" type="text" name="email" value="">
+        </div>
+        <div class="form-group">
+          <label for="">Phone: </label>
+          <input class="form-control" type="text" name="phone" value="">
+        </div>
+          <div class="form-group">
+          <label for="">Amount: </label>
+          <input class="form-control" type="text" name="amount" value="">
+        </div>
+        <div class="form-group">
+          <button class="btn form-control btn-secondary">Pay Now</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
