@@ -1,0 +1,40 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+.container {
+  width: 700px;
+  padding: 25px 0 0 0;
+  margin-left:200px;
+  text-align: center;
+  margin: 0 auto;
+}
+table{
+  margin-left: 180px;
+  border: 2px black;
+}
+
+tr {
+  text-align: left;
+  margin-left: 180px;
+  border: 5px solid black;
+}
+
+tbody > tr:not(:nth-child(2n)) {
+  background-color: rgb(179, 70, 252);
+}
+
+th {
+  font-size: 125%;
+  padding-bottom: 10px;
+}
+
+td {
+  padding: 5px;
+}
+
+td:not(:first-child) {
+  text-align: right;
+}
